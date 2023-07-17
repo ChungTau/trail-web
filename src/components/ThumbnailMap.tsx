@@ -18,11 +18,9 @@ interface ThumbnailMapProps {
 const BaseContainer = styled('div')({
     gridArea: '1 / 2 / 4 / 3',
     height: '100%',
-    minWidth: '300px',
     '@media (max-width: 960px)': {
         gridArea: '2 / 1 / 3 / 3',
         height: '350px',
-        minWidth: '280px'
     }
 });
 

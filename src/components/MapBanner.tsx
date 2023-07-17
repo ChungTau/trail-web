@@ -320,7 +320,7 @@ function MapBanner({route, gpxData} : MapBannerProps) {
                 [114.705, 22.8619]
             ]}
                 maxZoom={18}
-                minZoom={10}
+                minZoom={9}
                 terrain={{
                 source: 'mapbox-dem',
                 exaggeration: terrainRate
@@ -351,8 +351,8 @@ function MapBanner({route, gpxData} : MapBannerProps) {
                     <ResetButton onClick={handleReset}/>
                     {mapRef &&<CustomFullscreenControl mapRef={mapRef}/>}
                     <Slider sx={{
-                        width: 160,
-                        mx:1.5
+                        width: 140,
+                        mx:1.2
                     }} valueLabelFormat={(v,i)=>(`${v}x`)} disabled={(startTime.current !== 0 || elapsedTime.current !== 0)} orientation="horizontal" marks max={2} defaultValue={0.75} value={sliderValue} // Update this line
                         onChange={handleSliderChange} step={0.25} min={0.5} size="small" valueLabelDisplay="on"/>
                 </MapPanelBase>

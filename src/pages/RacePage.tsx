@@ -90,13 +90,6 @@ function RacePage() {
                 <main>
                     <MapBanner route={route} gpxData={gpxData}/>
                     <CheckPoints/>
-                    <FloatButton onClick={colorMode.toggleColorMode}>
-                        <DarkModeSwitch
-                            checked={theme.palette.mode === dark}
-                            sunColor='#f8f8f8'
-                            onChange={() => {}}
-                            size={20}/>
-                    </FloatButton>
                 </main>
             </motion.div>
 

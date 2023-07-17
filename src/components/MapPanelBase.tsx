@@ -29,7 +29,7 @@ const MapPanelBase = ({top, right, left, bottom, children} : MapPanelBaseProps) 
             borderRadius: 8,
             justifyContents: 'space-evenly',
             alignItems: 'center',
-            gap: 2
+            gap: 1.6
         }}>
             {children}
         </Box>

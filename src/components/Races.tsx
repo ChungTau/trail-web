@@ -23,7 +23,7 @@ const gpxFiles = ['gpx1.gpx', 'gpx2.gpx', 'gpx3.gpx', 'gpx4.gpx']; // replace wi
 function Races() {
     const theme = useTheme();
     const RacesContainer = styled('div')({
-        backgroundColor: theme.palette.primary.light,
+        backgroundColor: 'transparent',
         borderRadius: '1.4rem',
         minHeight: '300px',
         width: '100%',
@@ -32,7 +32,7 @@ function Races() {
             padding: '6px 4px 6px 4px'
         },
         '@media (max-width:600px)': {
-            padding: '4px 0px 4px 0px'
+            padding: '2px 0px 2px 0px'
         }
     });
 

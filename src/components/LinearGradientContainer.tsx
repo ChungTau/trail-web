@@ -27,11 +27,11 @@ const LinearGradientContainer = ({gpxData} : {
     let fontSize;
 
     if (isSmallScreen) {
-        fontSize = '1.4rem';
+        fontSize = '1.2rem';
     } else if (isMediumScreen) {
-        fontSize = '2.2rem';
+        fontSize = '1.8rem';
     } else if (isLargeScreen) {
-        fontSize = '3.2rem';
+        fontSize = '3rem';
     }
 
     let bottom = 85;

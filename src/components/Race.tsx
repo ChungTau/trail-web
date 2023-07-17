@@ -103,7 +103,6 @@ function Race({gpx} : RaceProps) {
         return (
             <TitleContainer>
                     {gpx.name}
-                
             </TitleContainer>
         );
     }
