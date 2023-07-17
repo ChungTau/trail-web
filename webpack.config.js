@@ -4,7 +4,7 @@
 // avoid destructuring for older Node version support
 const resolve = require('path').resolve;
 const webpack = require('webpack');
-const {DefinePlugin} = require('webpack');
+require('dotenv').config();
 
 const config = {
   mode: 'development',
@@ -48,12 +48,9 @@ const config = {
 
   // Optional: Enables reading mapbox token from environment variable
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.REACT_APP_MAPBOX_ACCESS_TOKEN': JSON.stringify(process.env.NODE_ENV === 'production' ? process.env.REACT_APP_MAPBOX_ACCESS_TOKEN_PROD : process.env.REACT_APP_MAPBOX_ACCESS_TOKEN_DEV)
-    })
+    new webpack.EnvironmentPlugin(['REACT_APP_MAPBOX_ACCESS_TOKEN'])
   ]
 };
 
-// Enables bundling against src in this repo rather than the installed version
 module.exports = env =>
   env && env.local ? require('../webpack.config.local')(config)(env) : config;

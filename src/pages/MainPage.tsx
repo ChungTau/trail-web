@@ -22,6 +22,7 @@ const FloatButton = styled(Fab)(({theme}) => ({
 function MainPage() {
     const theme = useTheme();
     const colorMode = useContext(ColorModeContext);
+    console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
     const [loading,
         setLoading] = useState(true);
     return (
