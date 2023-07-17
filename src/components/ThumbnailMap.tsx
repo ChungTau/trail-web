@@ -57,7 +57,6 @@ const ThumbnailMap = memo(({mapRef, route, gpx} : ThumbnailMapProps) => {
                 dragRotate={false}
                 scrollZoom={false}
                 onLoad={onLoad}
-                mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
                 mapStyle="mapbox://styles/mapbox/streets-v9">
                 <Route route={route}/>
                 <StartPoint point={point([gpx.points[0].lon, gpx.points[0].lat])}/>

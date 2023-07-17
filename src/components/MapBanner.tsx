@@ -327,7 +327,7 @@ function MapBanner({route, gpxData} : MapBannerProps) {
                 onLoad={onLoad}
                 optimizeForTerrain
                 mapStyle={"mapbox://styles/mapbox/satellite-v9"}
-                mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}>
+        >
                   {routeComponents}  
 
                 {route && ((progressLine.length > 1)
