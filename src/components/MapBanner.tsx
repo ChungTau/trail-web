@@ -308,6 +308,7 @@ function MapBanner({route, gpxData} : MapBannerProps) {
         <MapContainer>
             <Map
                 ref={mapRef}
+                mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
                 initialViewState={{
                 longitude: hongKongCoordinates[0],
                 latitude: hongKongCoordinates[1]

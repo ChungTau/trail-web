@@ -48,8 +48,8 @@ const config = {
 
   // Optional: Enables reading mapbox token from environment variable
   plugins: [
-    new DefinePlugin({
-      'process.env.MapboxAccessToken': JSON.stringify(process.env.NODE_ENV == 'production' ? process.env.MapboxAccessTokenProd : process.env.REACT_APP_MAPBOX_ACCESS_TOKEN_DEV)
+    new webpack.DefinePlugin({
+      'process.env.REACT_APP_MAPBOX_ACCESS_TOKEN': JSON.stringify(process.env.NODE_ENV === 'production' ? process.env.REACT_APP_MAPBOX_ACCESS_TOKEN_PROD : process.env.REACT_APP_MAPBOX_ACCESS_TOKEN_DEV)
     })
   ]
 };

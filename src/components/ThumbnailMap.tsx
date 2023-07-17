@@ -48,6 +48,7 @@ const ThumbnailMap = memo(({mapRef, route, gpx} : ThumbnailMapProps) => {
         <BaseContainer>
             <Map
                 ref={mapRef}
+                mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
                 style={{
                 width: '100%',
                 height: '100%',
